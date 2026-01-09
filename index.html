@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytewise - CTO Advisory para equipos técnicos</title>
+    <meta name="description"
+        content="CTO Advisory para equipos con Shopify en producción. Claridad técnica, menos riesgo y decisiones mejor contrastadas. Async-first. Sin implementación.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 antialiased">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">B</span>
+                    </div>
+                    <span class="text-lg font-bold tracking-tight text-slate-900">Bytewise</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#como-trabajo"
+                        class="text-sm font-medium text-slate-600 hover:text-slate-900 transition hidden sm:block">Cómo
+                        trabajo</a>
+                    <a href="#experiencia"
+                        class="text-sm font-medium text-slate-600 hover:text-slate-900 transition hidden sm:block">Experiencia</a>
+                    <a href="precios.html"
+                        class="text-sm font-medium text-slate-600 hover:text-slate-900 transition hidden sm:block">Precios</a>
+                    <a href="#contacto"
+                        class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 hover:shadow-md transition-all">
+                        Contacto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 pt-16 pb-16 md:pt-24">
+        <div class="max-w-3xl">
+            <div class="flex flex-wrap gap-2">
+                <span
+                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
+                    CTO Advisory
+                </span>
+                <span
+                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
+                    Shopify
+                </span>
+                <span
+                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
+                    Async-first
+                </span>
+                <span
+                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
+                    Bilingüe ES/EN
+                </span>
+                <span
+                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
+                    Steering técnico
+                </span>
+            </div>
+
+            <h1 class="mt-6 text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
+                Claridad técnica y menos riesgo operativo, sin añadir ruido.
+            </h1>
+
+            <p class="mt-6 text-lg text-slate-600">
+                Acompañamiento técnico para agencias y marcas: decisiones bien contrastadas, priorización y
+                fiabilidad en producción.
+                El equipo ejecuta. No reemplazo a tu equipo. Les doy <span
+                    class="font-semibold text-slate-900">dirección técnica</span> para que ejecuten con confianza.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a href="#contacto"
+                    class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 transition">
+                    Hablar 30 min
+                </a>
+                <a href="#como-trabajo"
+                    class="inline-flex items-center justify-center rounded-lg border-2 border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition">
+                    Cómo trabajo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fit Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-100">
+        <div class="max-w-3xl">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">¿Es para ti?</h2>
+            <p class="mt-4 text-lg text-slate-600">
+                Este servicio funciona cuando hay equipo ejecutando pero falta dirección técnica. No sustituye
+                desarrollo ni gestión diaria.
+            </p>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <!-- Encaja bien -->
+            <div
+                class="relative rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200 p-8">
+                <div class="flex items-start gap-3 mb-6">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight text-slate-900">Encaja bien si…</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-700">Tu infraestructura es crítica y el error cuesta dinero
+                            (ventas, reputación, operaciones).</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-700">Hay equipo o una agencia ejecutando, pero faltan decisiones
+                            claras, priorización y visión de conjunto. Necesitas steering técnico.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-700">Integraciones, releases o picos generan riesgo real
+                            (webhooks, rate limits, checkout/POS).</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-700">Se quiere menos reuniones y más claridad por
+                            escrito.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- No encaja -->
+            <div class="relative rounded-2xl bg-gradient-to-br from-slate-50 to-gray-50 border-2 border-slate-200 p-8">
+                <div class="flex items-start gap-3 mb-6">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-slate-400 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight text-slate-900">No encaja si…</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-600">Buscas desarrollo o ejecución diaria.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-600">Necesitas soporte inmediato o guardias.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="3" />
+                        </svg>
+                        <span class="text-sm text-slate-600">Quieres delegar la gestión del día a día.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-100">
+        <div class="max-w-3xl">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">¿Qué aporta en la práctica?</h2>
+            <p class="mt-4 text-lg text-slate-600">
+                Un modelo para reducir incertidumbre y evitar errores caros: decidir mejor, priorizar mejor y
+                operar con más fiabilidad.
+            </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <!-- Decisiones más claras -->
+            <div
+                class="group relative rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 hover:shadow-lg transition-all">
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-900">Decisiones más claras</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Revisión de propuestas técnicas con trade-offs y recomendaciones por escrito, para que el
+                            equipo ejecute con confianza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menos riesgo -->
+            <div
+                class="group relative rounded-2xl border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50 p-8 hover:shadow-lg transition-all">
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-900">Menos riesgo en producción</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Señales de alerta, puntos débiles y checklists de fiabilidad (webhooks, reintentos, rate
+                            limits, observabilidad).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mejor foco -->
+            <div
+                class="group relative rounded-2xl border-2 border-purple-200 bg-gradient-to-br from-purple-50 to-pink-50 p-8 hover:shadow-lg transition-all">
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-900">Mejor foco del equipo</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Priorización: qué merece atención ahora y qué puede esperar. Menos "parches", más dirección.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menos reuniones -->
+            <div
+                class="group relative rounded-2xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-8 hover:shadow-lg transition-all">
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-900">Menos reuniones, más trazabilidad</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Async-first. Decisiones documentadas para no perder contexto ni repetir
+                            debates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section id="como-trabajo" class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+
+
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Cómo trabajo</h2>
+                <p class="mt-4 text-lg text-slate-600">
+                    Un modelo simple y asíncrono por defecto para mantener calidad.
+                </p>
+            </div>
+
+            <div class="mt-10 sm:mt-12 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div
+                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-2">Capacidad mensual</h3>
+                    <p class="text-sm text-slate-600">Retainer mensual con alcance, SLA y disponibilidad definidos.
+                    </p>
+                </div>
+
+                <div
+                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-2">Async-first</h3>
+                    <p class="text-sm text-slate-600">Reviews de PRs, diseños y docs, con feedback escrito y
+                        accionable.</p>
+                </div>
+
+                <div
+                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-2">Steering calls</h3>
+                    <p class="text-sm text-slate-600">1–2 llamadas/mes para desbloquear y decidir (no status).</p>
+                </div>
+
+                <div
+                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-2">Cierre mensual</h3>
+                    <p class="text-sm text-slate-600">Memo breve con riesgos, prioridades y próximos pasos.</p>
+                </div>
+            </div>
+
+            <!-- Entregables -->
+            <div class="mt-16 max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Entregables</h3>
+                <p class="mt-3 text-center text-slate-600 mb-8">
+                    Entregables claros para que el valor sea visible y trazable.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl bg-white border border-slate-200 p-5 hover:border-blue-300 transition-all">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Monthly Priorities Memo</h4>
+                                <p class="text-xs text-slate-600 mt-1">Riesgos detectados, prioridades técnicas y
+                                    recomendaciones (1–2 páginas).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-xl bg-white border border-slate-200 p-5 hover:border-emerald-300 transition-all">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Reviews asíncronas</h4>
+                                <p class="text-xs text-slate-600 mt-1">PRs críticos, RFCs o propuestas de
+                                    arquitectura con
+                                    feedback escrito.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-xl bg-white border border-slate-200 p-5 hover:border-purple-300 transition-all">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Decision Log</h4>
+                                <p class="text-xs text-slate-600 mt-1">Decisiones clave y contexto para no repetir
+                                    conversaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-xl bg-white border border-slate-200 p-5 hover:border-amber-300 transition-all">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Checklists y plantillas</h4>
+                                <p class="text-xs text-slate-600 mt-1">Pre-release checklist, incident playbook,
+                                    plantilla
+                                    para RCAs, Architecture decision records, y más.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experiencia" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-100">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">Contexto</h2>
+            <p class="mt-4 text-lg text-slate-600">
+                Trabajo a diario en los mismos problemas: decisiones técnicas que tienen que funcionar a escala.
+            </p>
+        </div>
+
+        <div class="mt-12 grid gap-8 md:grid-cols-2">
+            <div
+                class="relative rounded-2xl bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border-2 border-blue-200 p-8 hover:shadow-xl transition-all">
+                <div class="flex items-center gap-3 mb-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Partner en Comply</h3>
+                </div>
+                <p class="text-sm text-slate-700 mb-6 leading-relaxed">
+                    SaaS de compliance fiscal para comerciantes Shopify. Certificamos <span
+                        class="font-semibold">Francia</span> y <span class="font-semibold">España</span>.
+                    Multi-tenant sobre Azure, con toda la complejidad de integraciones POS, facturación y auditoría.
+                </p>
+                <div class="flex gap-2 flex-wrap">
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Certificación</span>
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Arquitectura</span>
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Cloud
+                        Native</span>
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Shopify
+                        Native</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-blue-200">
+                    <p class="text-xs text-slate-600">Storelink · Valencia, España</p>
+                </div>
+            </div>
+
+            <div
+                class="relative rounded-2xl bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border-2 border-emerald-200 p-8 hover:shadow-xl transition-all">
+                <div class="flex items-center gap-3 mb-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Manager en Boku</h3>
+                </div>
+                <p class="text-sm text-slate-700 mb-6 leading-relaxed">
+                    Coordinación de equipos técnicos distribuidos entre <span class="font-semibold">America, EMEA
+                        e APAC</span>.
+                    Technical Project Managers trabajando en proyectos globales con merchants como Apple.
+                </p>
+                <div class="flex gap-2 flex-wrap">
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-emerald-200 rounded-lg text-xs font-medium text-emerald-700">Equipos
+                        distribuidos</span>
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-emerald-200 rounded-lg text-xs font-medium text-emerald-700">Escalabilidad</span>
+                    <span
+                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-emerald-200 rounded-lg text-xs font-medium text-emerald-700">Async-first</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-emerald-200">
+                    <p class="text-xs text-slate-600">Boku · Global</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contacto" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <div
+                class="relative rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-12 shadow-2xl overflow-hidden">
+                <!-- Decorative elements -->
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+                </div>
+
+                <div class="relative text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-white">
+                        Hablemos de tu proyecto
+                    </h2>
+                    <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
+                        Primera llamada sin compromiso. Cuéntame qué estás construyendo y charlamos sobre las
+                        opciones
+                        que tienes.
+                        A veces con 30 minutos ya queda más claro el camino.
+                    </p>
+
+                    <div class="mt-8">
+                        <a href="mailto:alejandro@bytewise.es?subject=Bytewise - Primera llamada"
+                            class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 shadow-lg hover:bg-slate-100 hover:scale-105 transition-all">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            Agendar llamada
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-600">
+            <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <div class="font-medium text-slate-900">Bytewise</div>
+                    <div class="mt-1">CTO Advisory · Shopify · Async-first</div>
+                    <div class="mt-1">Servicio prestado por <span class="font-medium text-slate-900">Alejandro de
+                            Arriba
+                            SL</span></div>
+                </div>
+                <div class="flex gap-6">
+                    <a href="mailto:alejandro@bytewise.es" class="hover:text-slate-900">alejandro@bytewise.es</a>
+                    <a href="#como-trabajo" class="hover:text-slate-900">Cómo trabajo</a>
+                </div>
+            </div>
+            <div class="mt-6 text-xs text-slate-500">© 2025 Bytewise</div>
+        </div>
+    </footer>
+</body>
+
+</html>
