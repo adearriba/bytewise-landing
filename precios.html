@@ -16,16 +16,32 @@
     </style>
 </head>
 
-<body class="bg-white">
+<body class="bg-white text-slate-900 antialiased">
     <!-- Navigation -->
-    <nav class="border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <a href="/" class="text-2xl font-bold text-gray-900">Bytewise</a>
-                <div class="flex items-center gap-6">
-                    <a href="/" class="text-sm text-gray-600 hover:text-gray-900">Inicio</a>
-                    <a href="mailto:alejandro@bytewise.es"
-                        class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition">
+    <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">B</span>
+                    </div>
+                    <a href="index.html" class="text-lg font-bold tracking-tight text-slate-900">Bytewise</a>
+                </div>
+                <div class="flex items-center gap-3 sm:gap-6">
+                    <!-- Links desktop -->
+                    <div class="hidden sm:flex items-center gap-6">
+                        <a href="#como-trabajo"
+                            class="text-sm font-medium text-slate-600 hover:text-slate-900 transition">Cómo trabajo</a>
+                        <a href="#experiencia"
+                            class="text-sm font-medium text-slate-600 hover:text-slate-900 transition">Experiencia</a>
+                        <a href="precios.html"
+                            class="text-sm font-medium text-slate-600 hover:text-slate-900 transition">Precios</a>
+                    </div>
+
+                    <!-- CTA siempre visible -->
+                    <a href="#contacto"
+                        class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 sm:px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 hover:shadow-md transition-all">
                         Contacto
                     </a>
                 </div>
@@ -229,7 +245,7 @@
     </section>
 
     <!-- One-time Engagements -->
-    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <section class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Trabajos puntuales</h2>
@@ -310,7 +326,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8">
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
                 Preguntas frecuentes
@@ -391,7 +407,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-gray-900 text-white py-20 px-4 sm:px-6 lg:px-8">
+    <section class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
                 ¿Listo para empezar?
@@ -414,7 +430,7 @@
             <div class="flex justify-center gap-6 text-sm text-gray-600">
                 <a href="/" class="hover:text-gray-900">Inicio</a>
                 <span>|</span>
-                <a href="mailto:alejandro@bytewise.es" class="hover:text-gray-900">alejandro@bytewise.es</a>
+                <a href="precios.html" class="hover:text-gray-900">Precios</a>
                 <span>|</span>
                 <span>Valencia, España</span>
             </div>
