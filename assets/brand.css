@@ -1,0 +1,15 @@
+/* Bytewise — manual de marca. Space Grotesk (SIL OFL), autoalojada. */
+@font-face{font-family:"Space Grotesk";src:url("fonts/SpaceGrotesk-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Space Grotesk";src:url("fonts/SpaceGrotesk-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+html{scroll-behavior:smooth}
+body{font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;background:#F6F1E7;color:#0B0F14}
+
+/* Escala tipográfica: interletraje por nivel (tokens display / h1 / h2 / h3) */
+h1{letter-spacing:-.035em}
+h2{letter-spacing:-.02em}
+h3,h4{letter-spacing:-.01em}
+
+/* Foco visible: Ink sobre Paper/Sand, Cursor sobre Ink */
+a:focus-visible,button:focus-visible{outline:2px solid #0B0F14;outline-offset:2px}
+.on-ink a:focus-visible{outline-color:#FF5A1F}
