@@ -25,232 +25,162 @@
                         class="h-6 sm:h-7 w-auto">
                 </a>
                 <div class="flex items-center gap-3 sm:gap-6">
-                    <!-- Links desktop -->
                     <div class="hidden sm:flex items-center gap-6">
-                        <a href="#como-trabajo"
-                            class="text-sm font-medium text-muted hover:text-ink transition">Cómo trabajo</a>
-                        <a href="#experiencia"
-                            class="text-sm font-medium text-muted hover:text-ink transition">Experiencia</a>
-                        <a href="precios.html"
-                            class="text-sm font-medium text-muted hover:text-ink transition">Precios</a>
+                        <a href="index.html#como-trabajo" class="text-sm text-muted hover:text-ink transition">Cómo trabajo</a>
+                        <a href="index.html#experiencia" class="text-sm text-muted hover:text-ink transition">Experiencia</a>
+                        <a href="precios.html" class="text-sm font-bold text-ink" aria-current="page">Precios</a>
                     </div>
-
-                    <!-- CTA siempre visible -->
-                    <a href="#contacto"
+                    <a href="index.html#contacto"
                         class="inline-flex items-center justify-center rounded-md bg-ink px-4 sm:px-5 py-2.5 text-sm font-bold text-paper hover:bg-ink/90 transition-all">
                         Contacto
                     </a>
+                    <button id="mobileMenuBtn" type="button"
+                        class="sm:hidden inline-flex items-center justify-center rounded-md border border-line bg-paper px-3 py-2 text-ink hover:bg-sand"
+                        aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="sm:hidden hidden border-t border-line bg-paper">
+                <div class="py-3 flex flex-col gap-2">
+                    <a href="index.html#como-trabajo" class="py-2 text-sm text-muted hover:text-ink">Cómo trabajo</a>
+                    <a href="index.html#experiencia" class="py-2 text-sm text-muted hover:text-ink">Experiencia</a>
+                    <a href="precios.html" class="py-2 text-sm font-bold text-ink">Precios</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-16 pb-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-5xl font-bold text-ink mb-6 leading-tight">
+    <section class="px-6 pt-16 pb-12 md:pt-24">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl font-bold leading-[1.05] sm:text-5xl text-ink md:text-6xl lg:text-[64px]">
                 Precios transparentes.<br />
                 Sin sorpresas.
             </h1>
-            <p class="text-xl text-muted mb-8 max-w-2xl mx-auto">
+            <p class="mt-6 max-w-2xl text-lg text-muted">
                 Suscripciones mensuales con alcance, SLA y disponibilidad definidos. Facturación mensual, cancela cuando
                 quieras.
             </p>
         </div>
     </section>
 
-    <!-- Pricing Cards -->
-    <section class="pb-20 px-4 sm:px-6 lg:px-8">
+    <!-- Plans -->
+    <section class="px-6 pb-20">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-8 items-stretch">
-                <!-- Lite Plan -->
-                <div
-                    class="bg-paper border border-line rounded-lg p-8 flex flex-col h-full">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-ink mb-2">Lite</h3>
-                        <p class="text-muted text-sm">Dirección técnica puntual</p>
-                    </div>
+            <div class="grid items-stretch gap-10 md:grid-cols-3 md:gap-6">
+                <div class="flex h-full flex-col border-t-2 border-ink pt-6 md:pr-6">
+                    
+                    <h3 class="text-2xl font-bold">Lite</h3>
+                    <p class="mt-1 text-sm text-muted">Dirección técnica puntual</p>
 
-                    <div class="mb-6">
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-4xl font-bold text-ink">480 €</span>
-                            <span class="text-muted">/mes</span>
-                        </div>
-                        <p class="text-sm text-muted mt-1">4h/mes · SLA: 72h</p>
-                    </div>
+                    <p class="mt-8 flex items-baseline gap-2">
+                        <span class="text-5xl font-bold tracking-[-0.035em]">480 €</span>
+                        <span class="text-muted">/mes</span>
+                    </p>
+                    <p class="mt-1 text-sm text-muted">4h/mes · SLA: 72h</p>
 
-                    <ul class="space-y-4 mb-8">
+                    <ul class="mb-8 mt-8 space-y-3 text-sm">
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">1 steering call (60 min)</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>1 steering call (60 min)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">~3h reviews asíncronos</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>~3h reviews asíncronos</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Monthly Priorities Memo</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>Monthly Priorities Memo</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Decision Log (ligero)</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>Decision Log (ligero)</span>
                         </li>
                     </ul>
 
                     <a href="mailto:alejandro@bytewise.es?subject=Bytewise%20-%20Plan%20LITE"
-                        class="mt-auto block w-full text-center border border-ink text-ink px-6 py-3 rounded-md font-bold hover:bg-sand transition">
+                        class="mt-auto block w-full rounded-md px-6 py-3 text-center font-bold transition border border-ink text-ink hover:bg-sand">
                         Elegir Lite
                     </a>
                 </div>
+                <div class="on-ink flex h-full flex-col rounded-lg bg-ink p-6 text-paper sm:p-8">
+                    <p class="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-muted-dark">Recomendado</p>
+                    <h3 class="text-2xl font-bold">Core</h3>
+                    <p class="mt-1 text-sm text-muted-dark">Proyecto crítico en producción</p>
 
-                <!-- Core Plan (Destacado) -->
-                <div
-                    class="bg-paper border-2 border-ink rounded-lg p-8 relative flex flex-col h-full">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span
-                            class="bg-ink text-paper px-4 py-1 rounded-md text-xs font-bold uppercase">Recomendado</span>
-                    </div>
+                    <p class="mt-8 flex items-baseline gap-2">
+                        <span class="text-5xl font-bold tracking-[-0.035em]">1.200 €</span>
+                        <span class="text-muted-dark">/mes</span>
+                    </p>
+                    <p class="mt-1 text-sm text-muted-dark">8h/mes · SLA: 48h</p>
 
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-ink mb-2">Core</h3>
-                        <p class="text-muted text-sm">Proyecto crítico en producción</p>
-                    </div>
-
-                    <div class="mb-6">
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-4xl font-bold text-ink">1.200 €</span>
-                            <span class="text-muted">/mes</span>
-                        </div>
-                        <p class="text-sm text-muted mt-1">8h/mes · SLA: 48h</p>
-                    </div>
-
-                    <ul class="space-y-4 mb-8">
+                    <ul class="mb-8 mt-8 space-y-3 text-sm">
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">1 × 90 min o 2 × 45 min calls</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-paper" aria-hidden="true"></span>
+                            <span>1 × 90 min o 2 × 45 min calls</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">~6,5h reviews asíncronos</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-paper" aria-hidden="true"></span>
+                            <span>~6,5h reviews asíncronos</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Monthly Priorities Memo</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-paper" aria-hidden="true"></span>
+                            <span>Monthly Priorities Memo</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Decision Log (ligero)</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-paper" aria-hidden="true"></span>
+                            <span>Decision Log (ligero)</span>
                         </li>
                     </ul>
 
                     <a href="mailto:alejandro@bytewise.es?subject=Bytewise%20-%20Plan%20CORE"
-                        class="mt-auto block w-full text-center bg-ink text-paper px-6 py-3 rounded-md font-bold hover:bg-ink/90 transition">
+                        class="mt-auto block w-full rounded-md px-6 py-3 text-center font-bold transition bg-paper text-ink hover:bg-sand">
                         Elegir Core
                     </a>
                 </div>
+                <div class="flex h-full flex-col border-t-2 border-ink pt-6 md:pr-6">
+                    
+                    <h3 class="text-2xl font-bold">Plus</h3>
+                    <p class="mt-1 text-sm text-muted">Embedded CTO Advisor</p>
 
-                <!-- Plus Plan -->
-                <div
-                    class="bg-paper border border-line rounded-lg p-8 flex flex-col h-full">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-ink mb-2">Plus</h3>
-                        <p class="text-muted text-sm">Embedded CTO Advisor</p>
-                    </div>
+                    <p class="mt-8 flex items-baseline gap-2">
+                        <span class="text-5xl font-bold tracking-[-0.035em]">2.400 €</span>
+                        <span class="text-muted">/mes</span>
+                    </p>
+                    <p class="mt-1 text-sm text-muted">12h/mes · SLA: 24h - 48h</p>
 
-                    <div class="mb-6">
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-4xl font-bold text-ink">2.400 €</span>
-                            <span class="text-muted">/mes</span>
-                        </div>
-                        <p class="text-sm text-muted mt-1">12h/mes · SLA: 24h - 48h</p>
-                    </div>
-
-                    <ul class="space-y-4 mb-8">
+                    <ul class="mb-8 mt-8 space-y-3 text-sm">
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">2 steering calls (60 min)</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>2 steering calls (60 min)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">~10h reviews asíncronos</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>~10h reviews asíncronos</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Monthly Priorities Memo</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>Monthly Priorities Memo</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Mensajería instantánea integrada (Slack/Teams)</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>Mensajería instantánea integrada (Slack/Teams)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Email whitelabel (desde dominio corporativo del cliente)</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>Email whitelabel (desde dominio corporativo del cliente)</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-sm text-muted">Quarterly architecture snapshot</span>
+                            <span class="mt-2 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                            <span>Quarterly architecture snapshot</span>
                         </li>
                     </ul>
 
                     <a href="mailto:alejandro@bytewise.es?subject=Bytewise%20-%20Plan%20PLUS"
-                        class="mt-auto block w-full text-center border border-ink text-ink px-6 py-3 rounded-md font-bold hover:bg-sand transition">
+                        class="mt-auto block w-full rounded-md px-6 py-3 text-center font-bold transition border border-ink text-ink hover:bg-sand">
                         Elegir Plus
                     </a>
                 </div>
@@ -259,341 +189,344 @@
     </section>
 
     <!-- One-time Engagements -->
-    <section class="bg-sand py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-ink mb-4">Trabajos puntuales</h2>
-                <p class="text-lg text-muted max-w-2xl mx-auto">
+    <section class="border-t border-line bg-sand px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-3xl">
+                <h2 class="text-3xl font-bold leading-[1.1] text-ink md:text-5xl">Trabajos puntuales</h2>
+                <p class="mt-4 text-lg text-muted">
                     Si prefieres un proyecto específico sin suscripción mensual.
-
                 </p>
-                <p class="text-sm text-muted mt-1"><span class="font-bold text-ink">Sujeto a
+                <p class="mt-1 text-sm text-muted"><span class="font-bold text-ink">Sujeto a
                         disponibilidad</span> - las suscripciones tienen prioridad.</p>
             </div>
 
-            <div class="max-w-xl mx-auto">
-                <div class="bg-paper border border-line rounded-lg p-8">
-                    <h3 class="text-2xl font-bold text-ink mb-3">Architecture Review</h3>
-                    <div class="text-4xl font-bold text-ink mb-6">1.800 €</div>
-                    <p class="text-sm text-muted mb-6">
-                        Revisión completa de arquitectura, integrations y puntos de riesgo. Entrega estimada en 1-2
-                        semanas.
-                    </p>
-                    <ul class="space-y-3 text-sm text-muted mb-8">
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>~12h de trabajo</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Documento con findings</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Patrones, escalabilidad, disponibilidad</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-ink mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Recomendaciones priorizadas</span>
-                        </li>
-                    </ul>
+            <div class="mt-12 grid gap-10 border-t-2 border-ink pt-8 md:grid-cols-12 md:gap-16">
+                <div class="md:col-span-5">
+                    <h3 class="text-2xl font-bold text-ink">Architecture Review</h3>
+                    <p class="mt-6 text-5xl font-bold tracking-[-0.035em] text-ink">1.800 €</p>
                     <a href="mailto:alejandro@bytewise.es?subject=Bytewise%20-%20Architecture%20Review"
-                        class="block w-full text-center bg-ink text-paper px-6 py-3 rounded-md font-bold hover:bg-ink/90 transition">
+                        class="mt-8 inline-flex w-full items-center justify-center rounded-md bg-ink px-6 py-3 font-bold text-paper transition hover:bg-ink/90 sm:w-auto">
                         Consultar disponibilidad
                     </a>
                 </div>
-            </div>
-
-            <div class="mt-8 bg-sand border border-line rounded-md p-6">
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-ink flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-muted">
-                        <strong class="text-ink">Nota importante:</strong>
-                        <p>Los trabajos puntuales están sujetos a
-                            disponibilidad.
-                            No garantizo timeline específico ni prioridad sobre clientes con retainer. Si necesitas
-                            capacidad reservada,
-                            considera un plan mensual.</p>
-                    </div>
+                <div class="md:col-span-7">
+                    <p class="text-muted">
+                        Revisión completa de arquitectura, integrations y puntos de riesgo. Entrega estimada en 1-2
+                        semanas.
+                    </p>
+                    <ul class="mt-6 space-y-3 text-ink">
+                        <li class="flex items-start gap-3"><span class="mt-2.5 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span><span>~12h de trabajo</span></li>
+                        <li class="flex items-start gap-3"><span class="mt-2.5 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span><span>Documento con findings</span></li>
+                        <li class="flex items-start gap-3"><span class="mt-2.5 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span><span>Patrones, escalabilidad, disponibilidad</span></li>
+                        <li class="flex items-start gap-3"><span class="mt-2.5 h-2 w-2 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span><span>Recomendaciones priorizadas</span></li>
+                    </ul>
                 </div>
             </div>
+
+            <p class="mt-10 max-w-3xl border-t border-line pt-6 text-sm text-muted">
+                <strong class="font-bold text-ink">Nota importante:</strong>
+                Los trabajos puntuales están sujetos a disponibilidad. No garantizo timeline específico ni prioridad
+                sobre clientes con retainer. Si necesitas capacidad reservada, considera un plan mensual.
+            </p>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-ink mb-12 text-center">
+    <section class="px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold leading-[1.1] text-ink md:text-5xl">
                 Preguntas frecuentes
             </h2>
 
-            <div class="space-y-6">
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Cómo funciona la facturación?</h3>
-                    <p class="text-muted">
-                        Facturación mensual por adelantado. Sin permanencia: puedes cancelar en cualquier momento con 30
-                        días de aviso previo. Aceptamos transferencia bancaria.
-                    </p>
+            <div class="mt-12 border-b border-line">
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Cómo funciona la facturación?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            Facturación mensual por adelantado. Sin permanencia: puedes cancelar en cualquier momento con 30
+                            días de aviso previo. Aceptamos transferencia bancaria.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Qué pasa si no uso todas las horas del
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Qué pasa si no uso todas las horas del
                         mes?</h3>
-                    <p class="text-muted">
-                        No es un modelo de horas contratadas, es capacidad mensual dedicada. Si un mes necesitas menos
-                        soporte, perfecto. El valor está en la disponibilidad, el contexto acumulado y la trazabilidad
-                        continua. Las horas no se acumulan.
-                    </p>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            No es un modelo de horas contratadas, es capacidad mensual dedicada. Si un mes necesitas menos
+                            soporte, perfecto. El valor está en la disponibilidad, el contexto acumulado y la trazabilidad
+                            continua. Las horas no se acumulan.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Puedo empezar con Lite y cambiar
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Puedo empezar con Lite y cambiar
                         después?</h3>
-                    <p class="text-muted">
-                        Sí. Puedes cambiar de plan con 15 días de aviso según disponibilidad. Muchos equipos empiezan
-                        con Lite para validar fit y escalan a Core o Partner cuando se vuelve más crítico.
-                    </p>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            Sí. Puedes cambiar de plan con 15 días de aviso según disponibilidad. Muchos equipos empiezan
+                            con Lite para validar fit y escalan a Core o Partner cuando se vuelve más crítico.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Por qué debería elegir Plus en vez de
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Por qué debería elegir Plus en vez de
                         Core?</h3>
-                    <p class="text-muted mb-3">
-                        Plus está diseñado para equipos que necesitan un CTO advisor más integrado en su operativa
-                        diaria. Diferencias clave:
-                    </p>
-                    <ul class="list-disc pl-5 space-y-1 text-muted">
-                        <li>Integración completa: Slack/Teams permite contexto continuo sin emails formales.</li>
-                        <li>Representación profesional: email whitelabel para terceros, clientes o partners.</li>
-                        <li>Mejor SLA: 24h vs 48h para validar decisiones críticas.</li>
-                        <li>Más contexto: 12h/mes para cubrir más iniciativas simultáneas.</li>
-                        <li>Valor económico: Slack (400 €) + whitelabel (800 €) en Core iguala el precio de Plus, pero
-                            Plus añade mejor SLA y más capacidad.</li>
-                    </ul>
+                    <div class="md:col-span-7">
+                        <p class="text-muted mb-3">
+                            Plus está diseñado para equipos que necesitan un CTO advisor más integrado en su operativa
+                            diaria. Diferencias clave:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-muted">
+                            <li>Integración completa: Slack/Teams permite contexto continuo sin emails formales.</li>
+                            <li>Representación profesional: email whitelabel para terceros, clientes o partners.</li>
+                            <li>Mejor SLA: 24h vs 48h para validar decisiones críticas.</li>
+                            <li>Más contexto: 12h/mes para cubrir más iniciativas simultáneas.</li>
+                            <li>Valor económico: Slack (400 €) + whitelabel (800 €) en Core iguala el precio de Plus, pero
+                                Plus añade mejor SLA y más capacidad.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Cuándo NO necesito Plus?</h3>
-                    <ul class="list-disc pl-5 space-y-1 text-muted">
-                        <li>Validación puntual de decisiones técnicas → Lite.</li>
-                        <li>Steering regular de un proyecto específico → Core.</li>
-                        <li>No necesitas que el advisor esté “visible” en tu equipo → Core.</li>
-                        <li>Email no corporativo es suficiente para tu estilo de trabajo → Core.</li>
-                    </ul>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Cuándo NO necesito Plus?</h3>
+                    <div class="md:col-span-7">
+                        <ul class="list-disc pl-5 space-y-1 text-muted">
+                            <li>Validación puntual de decisiones técnicas → Lite.</li>
+                            <li>Steering regular de un proyecto específico → Core.</li>
+                            <li>No necesitas que el advisor esté “visible” en tu equipo → Core.</li>
+                            <li>Email no corporativo es suficiente para tu estilo de trabajo → Core.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Puedo tener Slack en Core?</h3>
-                    <p class="text-muted mb-3">
-                        No. Slack/Teams solo está disponible en Plus. Es una decisión intencional:
-                    </p>
-                    <ul class="list-disc pl-5 space-y-1 text-muted">
-                        <li>Gestionar múltiples workspaces tiene overhead operativo.</li>
-                        <li>Si necesitas Slack, normalmente necesitas el servicio completo de Plus.</li>
-                        <li>Mantenerlo exclusivo ayuda a preservar la calidad del servicio.</li>
-                    </ul>
-                    <p class="text-muted mt-3">
-                        Si trabajas principalmente en Slack y el email te resulta incómodo, Plus es el plan adecuado.
-                    </p>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Puedo tener Slack en Core?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted mb-3">
+                            No. Slack/Teams solo está disponible en Plus. Es una decisión intencional:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-muted">
+                            <li>Gestionar múltiples workspaces tiene overhead operativo.</li>
+                            <li>Si necesitas Slack, normalmente necesitas el servicio completo de Plus.</li>
+                            <li>Mantenerlo exclusivo ayuda a preservar la calidad del servicio.</li>
+                        </ul>
+                        <p class="text-muted mt-3">
+                            Si trabajas principalmente en Slack y el email te resulta incómodo, Plus es el plan adecuado.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Por qué no ofreces planes de más horas?</h3>
-                    <p class="text-muted">
-                        Por capacidad limitada. Trabajo en Storelink y Boku, por lo que Bytewise opera con 2-3 clientes
-                        máximo.
-                        Si necesitas más de 12h/mes, probablemente necesitas contratar un CTO full-time, no advisory.
-                    </p>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Por qué no ofreces planes de más horas?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            Por capacidad limitada. Trabajo en Storelink y Boku, por lo que Bytewise opera con 2-3 clientes
+                            máximo.
+                            Si necesitas más de 12h/mes, probablemente necesitas contratar un CTO full-time, no advisory.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Los trabajos puntuales están siempre
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Los trabajos puntuales están siempre
                         disponibles?</h3>
-                    <p class="text-muted">
-                        No. Están sujetos a disponibilidad y los retainers tienen prioridad absoluta. Si necesitas
-                        garantía de
-                        capacidad, considera un plan mensual.
-                    </p>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            No. Están sujetos a disponibilidad y los retainers tienen prioridad absoluta. Si necesitas
+                            garantía de
+                            capacidad, considera un plan mensual.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Trabajas con equipos fuera de España?</h3>
-                    <p class="text-muted">
-                        Sí. Tanto en inglés como en español. Mi timezone es Europa (CET/CEST), pero con async-first
-                        funciona bien para equipos en otras geografías.
-                    </p>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Trabajas con equipos fuera de España?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            Sí. Tanto en inglés como en español. Mi timezone es Europa (CET/CEST), pero con async-first
+                            funciona bien para equipos en otras geografías.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Cuál es la política de uso responsable de
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Cuál es la política de uso responsable de
                         canales de comunicación?</h3>
-                    <div class="text-muted space-y-4">
-                        <div>
-                            <p class="font-bold text-ink">Email (Lite, Core, Plus)</p>
-                            <ul class="mt-2 list-disc pl-5 space-y-1">
-                                <li>Los SLAs se calculan en días/horas laborables (lunes-viernes, 9:00-18:00 CET).
-                                </li>
-                                <li>Las consultas fuera de horario se procesan el siguiente día hábil.</li>
-                                <li>Bytewise no es soporte en tiempo real ni helpdesk operativo.</li>
-                                <li>Las consultas deben ser estratégicas/arquitectónicas, no troubleshooting paso a
-                                    paso.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="font-bold text-ink">Slack/Teams (solo Plus)</p>
-                            <ul class="mt-2 list-disc pl-5 space-y-1">
-                                <li>La presencia en Slack/Teams no implica disponibilidad en tiempo real.</li>
-                                <li>Los SLAs aplican igual que en email: 24h laborables para Plus.</li>
-                                <li>Notificaciones limitadas a horario laboral (9:00-18:00 CET).</li>
-                                <li>No es un canal de soporte urgente sin acuerdo previo.</li>
-                                <li>Se pueden silenciar notificaciones fuera de horario sin afectar el servicio.</li>
-                                <li>Uso esperado: coordinación async y contexto compartido, no chat en tiempo real.
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="font-bold text-ink">Email Whitelabel (solo Plus)</p>
-                            <ul class="mt-2 list-disc pl-5 space-y-1">
-                                <li>Se gestiona con la misma cadencia que el email principal.</li>
-                                <li>No acelera los tiempos de respuesta (SLA 24h).</li>
-                                <li>Está pensado para representación ante terceros, no para aumentar volumen.</li>
-                                <li>Cuenta dentro de la capacidad mensual contratada.</li>
-                            </ul>
+                    <div class="md:col-span-7">
+                        <div class="text-muted space-y-4">
+                            <div>
+                                <p class="font-bold text-ink">Email (Lite, Core, Plus)</p>
+                                <ul class="mt-2 list-disc pl-5 space-y-1">
+                                    <li>Los SLAs se calculan en días/horas laborables (lunes-viernes, 9:00-18:00 CET).
+                                    </li>
+                                    <li>Las consultas fuera de horario se procesan el siguiente día hábil.</li>
+                                    <li>Bytewise no es soporte en tiempo real ni helpdesk operativo.</li>
+                                    <li>Las consultas deben ser estratégicas/arquitectónicas, no troubleshooting paso a
+                                        paso.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-bold text-ink">Slack/Teams (solo Plus)</p>
+                                <ul class="mt-2 list-disc pl-5 space-y-1">
+                                    <li>La presencia en Slack/Teams no implica disponibilidad en tiempo real.</li>
+                                    <li>Los SLAs aplican igual que en email: 24h laborables para Plus.</li>
+                                    <li>Notificaciones limitadas a horario laboral (9:00-18:00 CET).</li>
+                                    <li>No es un canal de soporte urgente sin acuerdo previo.</li>
+                                    <li>Se pueden silenciar notificaciones fuera de horario sin afectar el servicio.</li>
+                                    <li>Uso esperado: coordinación async y contexto compartido, no chat en tiempo real.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-bold text-ink">Email Whitelabel (solo Plus)</p>
+                                <ul class="mt-2 list-disc pl-5 space-y-1">
+                                    <li>Se gestiona con la misma cadencia que el email principal.</li>
+                                    <li>No acelera los tiempos de respuesta (SLA 24h).</li>
+                                    <li>Está pensado para representación ante terceros, no para aumentar volumen.</li>
+                                    <li>Cuenta dentro de la capacidad mensual contratada.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Los canales de comunicación son soporte en
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Los canales de comunicación son soporte en
                         tiempo real?</h3>
-                    <p class="text-muted mb-3">
-                        No. Independientemente del plan o canal (email, Slack, Teams), Bytewise opera con los SLAs
-                        definidos:
-                    </p>
-                    <ul class="list-disc pl-5 space-y-1 text-muted">
-                        <li>Lite: 72h laborables.</li>
-                        <li>Core: 48h laborables.</li>
-                        <li>Plus: 24h laborables.</li>
-                    </ul>
-                    <p class="text-muted mt-3">
-                        Estar en Slack no significa respuestas inmediatas. El valor está en el contexto compartido y la
-                        comunicación async.
-                    </p>
+                    <div class="md:col-span-7">
+                        <p class="text-muted mb-3">
+                            No. Independientemente del plan o canal (email, Slack, Teams), Bytewise opera con los SLAs
+                            definidos:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-muted">
+                            <li>Lite: 72h laborables.</li>
+                            <li>Core: 48h laborables.</li>
+                            <li>Plus: 24h laborables.</li>
+                        </ul>
+                        <p class="text-muted mt-3">
+                            Estar en Slack no significa respuestas inmediatas. El valor está en el contexto compartido y la
+                            comunicación async.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Qué incluye “email whitelabel”?</h3>
-                    <p class="text-muted mb-3">
-                        Permite que el advisor responda desde una dirección @tudominio.com al interactuar con clientes,
-                        equipo o stakeholders.
-                    </p>
-                    <ul class="list-disc pl-5 space-y-1 text-muted">
-                        <li>Agencias que quieren presentar al advisor como parte de su equipo técnico.</li>
-                        <li>Empresas que necesitan consistencia de marca en comunicaciones externas.</li>
-                        <li>Situaciones donde terceros deben ver al advisor como empleado interno.</li>
-                    </ul>
-                    <p class="text-muted mt-3">
-                        Importante: el email whitelabel no cambia los SLAs ni la naturaleza del servicio.
-                    </p>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Qué incluye “email whitelabel”?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted mb-3">
+                            Permite que el advisor responda desde una dirección @tudominio.com al interactuar con clientes,
+                            equipo o stakeholders.
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-muted">
+                            <li>Agencias que quieren presentar al advisor como parte de su equipo técnico.</li>
+                            <li>Empresas que necesitan consistencia de marca en comunicaciones externas.</li>
+                            <li>Situaciones donde terceros deben ver al advisor como empleado interno.</li>
+                        </ul>
+                        <p class="text-muted mt-3">
+                            Importante: el email whitelabel no cambia los SLAs ni la naturaleza del servicio.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Tiene límite el uso de Slack en Plus?</h3>
-                    <p class="text-muted mb-3">
-                        Plus incluye acceso a 1 workspace de Slack/Teams. Si necesitas presencia en varios, consulta
-                        configuraciones especiales.
-                    </p>
-                    <p class="text-muted mb-3">
-                        En cuanto al volumen de mensajes, no hay límite estricto, pero se espera uso responsable:
-                    </p>
-                    <ul class="list-disc pl-5 space-y-1 text-muted">
-                        <li>Slack es para coordinación, contexto compartido y consultas async.</li>
-                        <li>No es soporte en tiempo real (SLA de 24h).</li>
-                        <li>Uso excesivo puede requerir ajustar plan o capacidad.</li>
-                    </ul>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Tiene límite el uso de Slack en Plus?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted mb-3">
+                            Plus incluye acceso a 1 workspace de Slack/Teams. Si necesitas presencia en varios, consulta
+                            configuraciones especiales.
+                        </p>
+                        <p class="text-muted mb-3">
+                            En cuanto al volumen de mensajes, no hay límite estricto, pero se espera uso responsable:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-muted">
+                            <li>Slack es para coordinación, contexto compartido y consultas async.</li>
+                            <li>No es soporte en tiempo real (SLA de 24h).</li>
+                            <li>Uso excesivo puede requerir ajustar plan o capacidad.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Qué NO está cubierto por los canales de
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Qué NO está cubierto por los canales de
                         comunicación?</h3>
-                    <p class="text-muted">
-                        Independientemente del plan o canal, Bytewise no proporciona:
-                    </p>
-                    <ul class="mt-3 list-disc pl-5 space-y-1 text-muted">
-                        <li>Soporte en tiempo real o respuestas síncronas inmediatas.</li>
-                        <li>Debugging línea por línea o troubleshooting hands-on.</li>
-                        <li>Resolución de tickets operativos diarios.</li>
-                        <li>Disponibilidad 24/7 o soporte fuera de horario laboral.</li>
-                        <li>Cobertura on-call para incidentes de producción.</li>
-                    </ul>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            Independientemente del plan o canal, Bytewise no proporciona:
+                        </p>
+                        <ul class="mt-3 list-disc pl-5 space-y-1 text-muted">
+                            <li>Soporte en tiempo real o respuestas síncronas inmediatas.</li>
+                            <li>Debugging línea por línea o troubleshooting hands-on.</li>
+                            <li>Resolución de tickets operativos diarios.</li>
+                            <li>Disponibilidad 24/7 o soporte fuera de horario laboral.</li>
+                            <li>Cobertura on-call para incidentes de producción.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="bg-paper border border-line rounded-md p-6">
-                    <h3 class="text-lg font-bold text-ink mb-2">¿Hay periodo de prueba?</h3>
-                    <p class="text-muted">
-                        No hay trial formal, pero ofrezco una primera llamada gratuita de 30 minutos para evaluar fit
-                        antes de arrancar. Si después del primer mes no funciona, cancelas sin penalización.
-                    </p>
+                <div class="grid gap-x-12 gap-y-3 border-t border-line py-8 md:grid-cols-12">
+                    <h3 class="text-lg font-bold text-ink md:col-span-5">¿Hay periodo de prueba?</h3>
+                    <div class="md:col-span-7">
+                        <p class="text-muted">
+                            No hay trial formal, pero ofrezco una primera llamada gratuita de 30 minutos para evaluar fit
+                            antes de arrancar. Si después del primer mes no funciona, cancelas sin penalización.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="on-ink bg-ink text-paper py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">
-                ¿Listo para empezar?
-            </h2>
-            <p class="text-xl text-sand mb-10 max-w-2xl mx-auto">
-                Hablemos 30 minutos para ver si tiene sentido trabajar juntos. Sin compromiso.
-            </p>
-            <a href="mailto:alejandro@bytewise.es?subject=Bytewise%20-%20Primera%20llamada"
-                class="inline-flex items-center justify-center bg-cursor text-ink px-8 py-4 rounded-md text-lg font-bold hover:bg-paper transition-colors">
-                Agendar llamada gratuita
-            </a>
+    <section class="on-ink bg-ink px-6 py-16 text-paper">
+        <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-12 md:items-end">
+            <div class="md:col-span-8">
+                <h2 class="text-4xl font-bold leading-[1.05] md:text-5xl">¿Listo para empezar?</h2>
+                <p class="mt-4 max-w-xl text-lg text-muted-dark">
+                    Hablemos 30 minutos para ver si tiene sentido trabajar juntos. Sin compromiso.
+                </p>
+            </div>
+            <div class="md:col-span-4 md:text-right">
+                <a href="mailto:alejandro@bytewise.es?subject=Bytewise%20-%20Primera%20llamada"
+                    class="inline-flex items-center justify-center rounded-md bg-cursor px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-paper">
+                    Agendar llamada gratuita
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-sand border-t border-line py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-6xl mx-auto text-center">
-            <a href="index.html" class="inline-block mb-4" aria-label="Bytewise, inicio">
-                <img src="assets/bytewise-logo-ink.svg" alt="Bytewise" width="565" height="112" class="h-8 w-auto">
-            </a>
-            <p class="text-muted mb-6">CTO Advisory para equipos Shopify</p>
-            <div class="flex justify-center gap-6 text-sm text-muted">
-                <a href="/" class="hover:text-ink">Inicio</a>
-                <span>|</span>
-                <a href="precios.html" class="hover:text-ink">Precios</a>
-                <span>|</span>
-                <span>Valencia, España</span>
+    <footer class="bg-sand border-t border-line py-12 px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-12">
+            <div class="md:col-span-6">
+                <a href="index.html" class="inline-block" aria-label="Bytewise, inicio">
+                    <img src="assets/bytewise-logo-ink.svg" alt="Bytewise" width="565" height="112" class="h-8 w-auto">
+                </a>
+                <p class="mt-4 text-muted">CTO Advisory para equipos Shopify</p>
             </div>
-            <div class="mt-6 text-xs text-muted">
+            <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink md:col-span-6 md:justify-end" aria-label="Pie">
+                <a href="index.html" class="hover:underline">Inicio</a>
+                <a href="precios.html" class="hover:underline">Precios</a>
+                <span class="text-muted">Valencia, España</span>
+            </nav>
+            <p class="border-t border-line pt-6 text-xs text-muted md:col-span-12">
                 Servicio prestado por Alejandro de Arriba SL · © 2025 Bytewise
-            </div>
+            </p>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn?.addEventListener('click', () => {
+            const isHidden = menu.classList.contains('hidden');
+            menu.classList.toggle('hidden', !isHidden);
+            btn.setAttribute('aria-expanded', String(isHidden));
+        });
+    </script>
 </body>
 
 </html>

@@ -13,3 +13,8 @@ h3,h4{letter-spacing:-.01em}
 /* Foco visible: Ink sobre Paper/Sand, Cursor sobre Ink */
 a:focus-visible,button:focus-visible{outline:2px solid #0B0F14;outline-offset:2px}
 .on-ink a:focus-visible{outline-color:#FF5A1F}
+
+/* El cursor de la marca espera la siguiente instrucción */
+@keyframes cursor-blink{0%,55%{opacity:1}56%,100%{opacity:.15}}
+.cursor-cell{animation:cursor-blink 1.2s step-end infinite}
+@media (prefers-reduced-motion:reduce){.cursor-cell{animation:none}}
