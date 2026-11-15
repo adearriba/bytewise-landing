@@ -7,49 +7,45 @@
     <title>Bytewise - CTO Advisory para equipos técnicos</title>
     <meta name="description"
         content="CTO Advisory para equipos con Shopify en producción. Claridad técnica, menos riesgo y decisiones mejor contrastadas. Async-first. Sin implementación.">
+    <link rel="icon" type="image/svg+xml" href="assets/bytewise-app-icon.svg">
+    <link rel="apple-touch-icon" href="assets/bytewise-app-icon.svg">
+    <meta name="theme-color" content="#F6F1E7">
+    <link rel="preload" href="assets/fonts/SpaceGrotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/SpaceGrotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/brand.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <script src="assets/brand.js"></script>
 </head>
 
-<body class="bg-white text-slate-900 antialiased">
+<body class="bg-paper text-ink antialiased">
     <!-- Navigation -->
-    <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav class="sticky top-0 z-50 border-b border-line bg-paper/95">
         <div class="max-w-6xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                    <div
-                        class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-                        <span class="text-white font-bold text-sm">B</span>
-                    </div>
-                    <span class="text-lg font-bold tracking-tight text-slate-900">Bytewise</span>
-                </div>
+                <a href="index.html" class="flex items-center" aria-label="Bytewise, inicio">
+                    <img src="assets/bytewise-logo-color.svg" alt="Bytewise" width="565" height="112"
+                        class="h-6 sm:h-7 w-auto">
+                </a>
                 <div class="flex items-center gap-3 sm:gap-6">
                     <!-- Links desktop -->
                     <div class="hidden sm:flex items-center gap-6">
                         <a href="#como-trabajo"
-                            class="text-sm font-medium text-slate-600 hover:text-slate-900 transition">Cómo trabajo</a>
+                            class="text-sm font-medium text-muted hover:text-ink transition">Cómo trabajo</a>
                         <a href="#experiencia"
-                            class="text-sm font-medium text-slate-600 hover:text-slate-900 transition">Experiencia</a>
+                            class="text-sm font-medium text-muted hover:text-ink transition">Experiencia</a>
                         <a href="precios.html"
-                            class="text-sm font-medium text-slate-600 hover:text-slate-900 transition">Precios</a>
+                            class="text-sm font-medium text-muted hover:text-ink transition">Precios</a>
                     </div>
 
                     <!-- CTA siempre visible -->
                     <a href="#contacto"
-                        class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 sm:px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 hover:shadow-md transition-all">
+                        class="inline-flex items-center justify-center rounded-md bg-ink px-4 sm:px-5 py-2.5 text-sm font-bold text-paper hover:bg-ink/90 transition-all">
                         Contacto
                     </a>
 
                     <!-- Botón hamburguesa (solo móvil) -->
                     <button id="mobileMenuBtn" type="button"
-                        class="sm:hidden inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-700 shadow-sm hover:bg-slate-50"
+                        class="sm:hidden inline-flex items-center justify-center rounded-md border border-line bg-paper px-3 py-2 text-muted hover:bg-sand"
                         aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,14 +55,14 @@
                 </div>
             </div>
 
-            <div id="mobileMenu" class="sm:hidden hidden border-t border-slate-200 bg-white">
+            <div id="mobileMenu" class="sm:hidden hidden border-t border-line bg-paper">
                 <div class="max-w-6xl mx-auto px-6 py-3 flex flex-col gap-2">
-                    <a href="#como-trabajo" class="py-2 text-sm font-medium text-slate-700 hover:text-slate-900">Cómo
+                    <a href="#como-trabajo" class="py-2 text-sm font-medium text-muted hover:text-ink">Cómo
                         trabajo</a>
                     <a href="#experiencia"
-                        class="py-2 text-sm font-medium text-slate-700 hover:text-slate-900">Experiencia</a>
+                        class="py-2 text-sm font-medium text-muted hover:text-ink">Experiencia</a>
                     <a href="precios.html"
-                        class="py-2 text-sm font-medium text-slate-700 hover:text-slate-900">Precios</a>
+                        class="py-2 text-sm font-medium text-muted hover:text-ink">Precios</a>
                 </div>
             </div>
         </div>
@@ -74,144 +70,130 @@
 
     <!-- Hero Section -->
     <section class="max-w-6xl mx-auto px-6 pt-16 pb-16 md:pt-24">
-        <div class="max-w-3xl">
-            <div class="flex flex-wrap gap-2">
-                <span
-                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
-                    CTO Advisory
-                </span>
-                <span
-                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
-                    Shopify
-                </span>
-                <span
-                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
-                    Async-first
-                </span>
-                <span
-                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
-                    Bilingüe ES/EN
-                </span>
-                <span
-                    class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-medium text-blue-700">
-                    Steering técnico
-                </span>
-            </div>
+        <div class="grid items-center gap-10 md:grid-cols-12 md:gap-16">
+        <div class="md:col-span-7">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-muted">CTO advisory · Shopify · Async-first</p>
 
-            <h1 class="mt-6 text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
-                Claridad técnica y menos riesgo operativo, sin añadir ruido.
+            <h1 class="mt-6 text-4xl font-bold leading-[1.05] sm:text-5xl text-balance text-ink md:text-6xl lg:text-[58px]">
+                Reviso tu arquitectura Shopify y te digo qué cambiar primero.
             </h1>
 
-            <p class="mt-6 text-lg text-slate-600">
-                Acompañamiento técnico para agencias y marcas: decisiones bien contrastadas, priorización y
-                fiabilidad en producción.
-                El equipo ejecuta. No reemplazo a tu equipo. Les doy <span
-                    class="font-semibold text-slate-900">dirección técnica</span> para que ejecuten con confianza.
+            <p class="mt-6 text-lg text-muted">
+                Dirección técnica para agencias y marcas con Shopify en producción: decisiones por escrito,
+                prioridades claras y menos riesgo. No reemplazo a tu equipo: le doy <span
+                    class="font-bold text-ink">dirección técnica</span> para que ejecute con confianza.
             </p>
 
             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#contacto"
-                    class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 transition">
+                    class="inline-flex items-center justify-center rounded-md bg-ink px-6 py-3 text-sm font-bold text-paper hover:bg-ink/90 transition">
                     Agendar 30 min
                 </a>
                 <a href="#como-trabajo"
-                    class="inline-flex items-center justify-center rounded-lg border-2 border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition">
+                    class="inline-flex items-center justify-center rounded-md border border-line px-6 py-3 text-sm font-bold text-muted hover:bg-sand transition">
                     Cómo trabajo
                 </a>
             </div>
         </div>
+
+        <!-- Monograma ampliado: retícula 4 × 7 con una única celda Cursor, sobre Ink -->
+        <div class="relative w-full md:col-span-5" aria-hidden="true">
+            <div class="absolute -bottom-3 -left-3 h-20 w-16 rounded-lg md:-bottom-4 md:-left-4 md:h-32 md:w-24 border border-line bg-sand"></div>
+            <div class="on-ink relative flex aspect-[16/10] items-center md:aspect-[4/4.6] justify-center rounded-lg bg-ink">
+                <svg viewBox="0 0 68 122" class="h-[72%] w-auto md:h-[62%]">
+                    <rect x="0" y="0" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="18" y="0" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="36" y="0" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="0" y="18" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="54" y="18" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="0" y="36" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="54" y="36" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="0" y="54" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="18" y="54" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="36" y="54" width="14" height="14" rx="3" class="fill-cursor cursor-cell"/>
+                    <rect x="0" y="72" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="54" y="72" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="0" y="90" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="54" y="90" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="0" y="108" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="18" y="108" width="14" height="14" rx="3" class="fill-paper"/>
+                    <rect x="36" y="108" width="14" height="14" rx="3" class="fill-paper"/>
+                </svg>
+            </div>
+        </div>
+        </div>
+
+        <dl class="mt-16 grid grid-cols-2 border-t-2 border-ink md:grid-cols-4">
+            <div class="border-b border-line py-5 pr-4 md:border-b-0 md:py-6">
+                <dt class="text-xs font-bold uppercase tracking-[0.14em] text-muted">Capacidad máxima</dt>
+                <dd class="mt-2 text-2xl font-bold text-ink md:text-3xl">2–3 clientes</dd>
+            </div>
+            <div class="border-b border-line py-5 pr-4 md:border-b-0 md:py-6">
+                <dt class="text-xs font-bold uppercase tracking-[0.14em] text-muted">SLA según plan</dt>
+                <dd class="mt-2 text-2xl font-bold text-ink md:text-3xl">24–72 h</dd>
+            </div>
+            <div class="py-5 pr-4 md:py-6">
+                <dt class="text-xs font-bold uppercase tracking-[0.14em] text-muted">Desde</dt>
+                <dd class="mt-2 text-2xl font-bold text-ink md:text-3xl">480 €/mes</dd>
+            </div>
+            <div class="py-5 pr-4 md:py-6">
+                <dt class="text-xs font-bold uppercase tracking-[0.14em] text-muted">Idiomas</dt>
+                <dd class="mt-2 text-2xl font-bold text-ink md:text-3xl">ES / EN</dd>
+            </div>
+        </dl>
     </section>
 
     <!-- Fit Section -->
-    <section class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-100">
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-line">
         <div class="max-w-3xl">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900">¿Es para ti?</h2>
-            <p class="mt-4 text-lg text-slate-600">
+            <h2 class="text-3xl font-bold leading-[1.1] text-ink md:text-5xl">¿Es para ti?</h2>
+            <p class="mt-4 text-lg text-muted">
                 Este servicio funciona cuando hay equipo ejecutando pero falta dirección técnica. No sustituye
                 desarrollo ni gestión diaria.
             </p>
         </div>
-        <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <div class="mt-12 grid border-t-2 border-ink md:grid-cols-2 md:divide-x md:divide-line">
             <!-- Encaja bien -->
-            <div
-                class="relative rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200 p-8">
-                <div class="flex items-start gap-3 mb-6">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                            </path>
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold tracking-tight text-slate-900">Encaja bien si…</h2>
-                </div>
-                <ul class="space-y-4">
+            <div class="pt-6 md:pr-12">
+                <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-ink">Encaja bien si…</h3>
+                <ul class="mt-6 space-y-4">
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-700">Tu infraestructura es crítica y el error cuesta dinero
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                        <span class="text-ink">Tu infraestructura es crítica y el error cuesta dinero
                             (ventas, reputación, operaciones).</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-700">Hay equipo o una agencia ejecutando, pero faltan decisiones
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                        <span class="text-ink">Hay equipo o una agencia ejecutando, pero faltan decisiones
                             claras, priorización y visión de conjunto. Necesitas steering técnico.</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-700">Integraciones, releases o picos generan riesgo real
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                        <span class="text-ink">Integraciones, releases o picos generan riesgo real
                             (webhooks, rate limits, checkout/POS).</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-700">Se quiere menos reuniones y más claridad por
-                            escrito.</span>
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm bg-ink" aria-hidden="true"></span>
+                        <span class="text-ink">Se quiere menos reuniones y más claridad por escrito.</span>
                     </li>
                 </ul>
             </div>
 
             <!-- No encaja -->
-            <div class="relative rounded-2xl bg-gradient-to-br from-slate-50 to-gray-50 border-2 border-slate-200 p-8">
-                <div class="flex items-start gap-3 mb-6">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-slate-400 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold tracking-tight text-slate-900">No encaja si…</h2>
-                </div>
-                <ul class="space-y-4">
+            <div class="mt-12 border-t border-line pt-6 md:mt-0 md:border-t-0 md:pl-12">
+                <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-muted">No encaja si…</h3>
+                <ul class="mt-6 space-y-4">
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-600">Buscas desarrollo o ejecución diaria.</span>
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm border border-muted" aria-hidden="true"></span>
+                        <span class="text-muted">Buscas desarrollo o ejecución diaria.</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-600">Necesitas soporte inmediato o guardias.</span>
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm border border-muted" aria-hidden="true"></span>
+                        <span class="text-muted">Necesitas soporte inmediato o guardias.</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <circle cx="10" cy="10" r="3" />
-                        </svg>
-                        <span class="text-sm text-slate-600">Quieres delegar la gestión del día a día.</span>
+                        <span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-sm border border-muted" aria-hidden="true"></span>
+                        <span class="text-muted">Quieres delegar la gestión del día a día.</span>
                     </li>
                 </ul>
             </div>
@@ -219,399 +201,217 @@
     </section>
 
     <!-- Value Section -->
-    <section class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-100">
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-line">
         <div class="max-w-3xl">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900">¿Qué aporta en la práctica?</h2>
-            <p class="mt-4 text-lg text-slate-600">
+            <h2 class="text-3xl font-bold leading-[1.1] text-ink md:text-5xl">¿Qué aporta en la práctica?</h2>
+            <p class="mt-4 text-lg text-muted">
                 Un modelo para reducir incertidumbre y evitar errores caros: decidir mejor, priorizar mejor y
                 operar con más fiabilidad.
             </p>
         </div>
 
-        <div class="mt-12 grid gap-6 md:grid-cols-2">
-            <!-- Decisiones más claras -->
-            <div
-                class="group relative rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-4">
-                    <div
-                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-slate-900">Decisiones más claras</h3>
-                        <p class="mt-2 text-sm text-slate-600">
-                            Revisión de propuestas técnicas con trade-offs y recomendaciones por escrito, para que el
-                            equipo ejecute con confianza.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Menos riesgo -->
-            <div
-                class="group relative rounded-2xl border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50 p-8 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-4">
-                    <div
-                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-slate-900">Menos riesgo en producción</h3>
-                        <p class="mt-2 text-sm text-slate-600">
-                            Señales de alerta, puntos débiles y checklists de fiabilidad (webhooks, reintentos, rate
-                            limits, observabilidad).
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mejor foco -->
-            <div
-                class="group relative rounded-2xl border-2 border-purple-200 bg-gradient-to-br from-purple-50 to-pink-50 p-8 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-4">
-                    <div
-                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-slate-900">Mejor foco del equipo</h3>
-                        <p class="mt-2 text-sm text-slate-600">
-                            Priorización: qué merece atención ahora y qué puede esperar. Menos "parches", más dirección.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Menos reuniones -->
-            <div
-                class="group relative rounded-2xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-8 hover:shadow-lg transition-all">
-                <div class="flex items-start gap-4">
-                    <div
-                        class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-slate-900">Menos reuniones, más trazabilidad</h3>
-                        <p class="mt-2 text-sm text-slate-600">
-                            Async-first. Decisiones documentadas para no perder contexto ni repetir
-                            debates.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ol class="mt-12 border-b border-line">
+            <li class="grid gap-x-6 gap-y-2 border-t border-line py-6 md:grid-cols-12">
+                <span class="text-xs font-bold tracking-[0.14em] text-muted md:col-span-1 md:pt-1.5">01</span>
+                <h3 class="text-xl font-bold text-ink md:col-span-4">Decisiones más claras</h3>
+                <p class="text-muted md:col-span-7">
+                    Revisión de propuestas técnicas con trade-offs y recomendaciones por escrito, para que el
+                    equipo ejecute con confianza.
+                </p>
+            </li>
+            <li class="grid gap-x-6 gap-y-2 border-t border-line py-6 md:grid-cols-12">
+                <span class="text-xs font-bold tracking-[0.14em] text-muted md:col-span-1 md:pt-1.5">02</span>
+                <h3 class="text-xl font-bold text-ink md:col-span-4">Menos riesgo en producción</h3>
+                <p class="text-muted md:col-span-7">
+                    Señales de alerta, puntos débiles y checklists de fiabilidad (webhooks, reintentos, rate
+                    limits, observabilidad).
+                </p>
+            </li>
+            <li class="grid gap-x-6 gap-y-2 border-t border-line py-6 md:grid-cols-12">
+                <span class="text-xs font-bold tracking-[0.14em] text-muted md:col-span-1 md:pt-1.5">03</span>
+                <h3 class="text-xl font-bold text-ink md:col-span-4">Mejor foco del equipo</h3>
+                <p class="text-muted md:col-span-7">
+                    Priorización: qué merece atención ahora y qué puede esperar. Menos "parches", más dirección.
+                </p>
+            </li>
+            <li class="grid gap-x-6 gap-y-2 border-t border-line py-6 md:grid-cols-12">
+                <span class="text-xs font-bold tracking-[0.14em] text-muted md:col-span-1 md:pt-1.5">04</span>
+                <h3 class="text-xl font-bold text-ink md:col-span-4">Menos reuniones, más trazabilidad</h3>
+                <p class="text-muted md:col-span-7">
+                    Async-first. Decisiones documentadas para no perder contexto ni repetir debates.
+                </p>
+            </li>
+        </ol>
     </section>
 
     <!-- How We Work -->
-    <section id="como-trabajo" class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-slate-50">
-        <div class="max-w-4xl mx-auto">
-
-
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Cómo trabajo</h2>
-                <p class="mt-4 text-lg text-slate-600">
+    <section id="como-trabajo" class="py-16 border-t border-line bg-sand">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <h2 class="text-3xl font-bold leading-[1.1] text-ink md:text-5xl">Cómo trabajo</h2>
+                <p class="mt-4 text-lg text-muted">
                     Un modelo simple y asíncrono por defecto para mantener calidad.
                 </p>
             </div>
 
-            <div class="mt-10 sm:mt-12 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                <div
-                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-base font-semibold text-slate-900 mb-2">Capacidad mensual</h3>
-                    <p class="text-sm text-slate-600">Retainer mensual con alcance, SLA y disponibilidad definidos.
-                    </p>
-                </div>
-
-                <div
-                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-base font-semibold text-slate-900 mb-2">Async-first</h3>
-                    <p class="text-sm text-slate-600">Reviews de PRs, diseños y docs, con feedback escrito y
-                        accionable.</p>
-                </div>
-
-                <div
-                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-base font-semibold text-slate-900 mb-2">Steering calls</h3>
-                    <p class="text-sm text-slate-600">1–2 llamadas/mes para desbloquear y decidir (no status).</p>
-                </div>
-
-                <div
-                    class="relative rounded-2xl bg-white border-2 border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-base font-semibold text-slate-900 mb-2">Cierre mensual</h3>
-                    <p class="text-sm text-slate-600">Memo breve con riesgos, prioridades y próximos pasos.</p>
-                </div>
-            </div>
+            <ol class="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+                <li class="border-t-2 border-ink pt-4">
+                    <span class="text-xs font-bold tracking-[0.14em] text-muted">01</span>
+                    <h3 class="mt-3 text-xl font-bold text-ink">Capacidad mensual</h3>
+                    <p class="mt-2 text-muted">Retainer mensual con alcance, SLA y disponibilidad definidos.</p>
+                </li>
+                <li class="border-t-2 border-ink pt-4">
+                    <span class="text-xs font-bold tracking-[0.14em] text-muted">02</span>
+                    <h3 class="mt-3 text-xl font-bold text-ink">Async-first</h3>
+                    <p class="mt-2 text-muted">Reviews de PRs, diseños y docs, con feedback escrito y accionable.</p>
+                </li>
+                <li class="border-t-2 border-ink pt-4">
+                    <span class="text-xs font-bold tracking-[0.14em] text-muted">03</span>
+                    <h3 class="mt-3 text-xl font-bold text-ink">Steering calls</h3>
+                    <p class="mt-2 text-muted">1–2 llamadas/mes para desbloquear y decidir (no status).</p>
+                </li>
+                <li class="border-t-2 border-ink pt-4">
+                    <span class="text-xs font-bold tracking-[0.14em] text-muted">04</span>
+                    <h3 class="mt-3 text-xl font-bold text-ink">Cierre mensual</h3>
+                    <p class="mt-2 text-muted">Memo breve con riesgos, prioridades y próximos pasos.</p>
+                </li>
+            </ol>
 
             <!-- Entregables -->
-            <div class="mt-16 max-w-3xl mx-auto">
-                <h3 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Entregables</h3>
-                <p class="mt-3 text-center text-slate-600 mb-8">
+            <div class="mt-20 grid gap-12 lg:grid-cols-12 lg:gap-16">
+                <div class="lg:col-span-6">
+                <h3 class="text-2xl font-bold text-ink">Entregables</h3>
+                <p class="mt-3 text-muted">
                     Entregables claros para que el valor sea visible y trazable.
                 </p>
 
-                <div class="grid gap-4 md:grid-cols-2">
-                    <div class="rounded-xl bg-white border border-slate-200 p-5 hover:border-blue-300 transition-all">
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center mt-0.5">
-                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-slate-900 text-sm">Monthly Priorities Memo</h4>
-                                <p class="text-xs text-slate-600 mt-1">Riesgos detectados, prioridades técnicas y
-                                    recomendaciones (1–2 páginas).</p>
-                            </div>
-                        </div>
+                <dl class="mt-8 border-b border-line">
+                    <div class="grid gap-x-6 gap-y-1 border-t border-line py-5 sm:grid-cols-5">
+                        <dt class="font-bold text-ink sm:col-span-2">Monthly Priorities Memo</dt>
+                        <dd class="text-muted sm:col-span-3">Riesgos detectados, prioridades técnicas y
+                            recomendaciones (1–2 páginas).</dd>
                     </div>
-
-                    <div
-                        class="rounded-xl bg-white border border-slate-200 p-5 hover:border-emerald-300 transition-all">
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center mt-0.5">
-                                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-slate-900 text-sm">Reviews asíncronas</h4>
-                                <p class="text-xs text-slate-600 mt-1">PRs críticos, RFCs o propuestas de
-                                    arquitectura con
-                                    feedback escrito.</p>
-                            </div>
-                        </div>
+                    <div class="grid gap-x-6 gap-y-1 border-t border-line py-5 sm:grid-cols-5">
+                        <dt class="font-bold text-ink sm:col-span-2">Reviews asíncronas</dt>
+                        <dd class="text-muted sm:col-span-3">PRs críticos, RFCs o propuestas de arquitectura con
+                            feedback escrito.</dd>
                     </div>
-
-                    <div class="rounded-xl bg-white border border-slate-200 p-5 hover:border-purple-300 transition-all">
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center mt-0.5">
-                                <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-slate-900 text-sm">Decision Log</h4>
-                                <p class="text-xs text-slate-600 mt-1">Decisiones clave y contexto para no repetir
-                                    conversaciones.</p>
-                            </div>
-                        </div>
+                    <div class="grid gap-x-6 gap-y-1 border-t border-line py-5 sm:grid-cols-5">
+                        <dt class="font-bold text-ink sm:col-span-2">Decision Log</dt>
+                        <dd class="text-muted sm:col-span-3">Decisiones clave y contexto para no repetir
+                            conversaciones.</dd>
                     </div>
-
-                    <div class="rounded-xl bg-white border border-slate-200 p-5 hover:border-amber-300 transition-all">
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center mt-0.5">
-                                <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-slate-900 text-sm">Checklists y plantillas</h4>
-                                <p class="text-xs text-slate-600 mt-1">Pre-release checklist, incident playbook,
-                                    plantilla
-                                    para RCAs, Architecture decision records, y más.</p>
-                            </div>
-                        </div>
+                    <div class="grid gap-x-6 gap-y-1 border-t border-line py-5 sm:grid-cols-5">
+                        <dt class="font-bold text-ink sm:col-span-2">Checklists y plantillas</dt>
+                        <dd class="text-muted sm:col-span-3">Pre-release checklist, incident playbook, plantilla
+                            para RCAs, Architecture decision records, y más.</dd>
                     </div>
+                </dl>
                 </div>
+                <figure class="lg:col-span-6">
+                    <div class="rounded-md border border-line bg-paper p-6 sm:p-8">
+                        <img src="assets/bytewise-logo-ink.svg" alt="" width="565" height="112" class="h-5 w-auto">
+                        <div class="mt-5 flex flex-wrap justify-between gap-2 border-t border-line pt-4 text-xs font-bold uppercase tracking-[0.14em] text-muted">
+                            <span>Monthly Priorities Memo</span>
+                            <span>[Cliente] · [Mes]</span>
+                        </div>
+
+                        <h4 class="mt-6 text-lg font-bold text-ink">Riesgos detectados</h4>
+                        <ol class="mt-3 space-y-3 text-sm text-ink">
+                            <li class="flex gap-3"><span class="w-4 shrink-0 font-bold text-muted">1</span><span>Webhooks de pedidos sin reintentos ni idempotencia.</span></li>
+                            <li class="flex gap-3"><span class="w-4 shrink-0 font-bold text-muted">2</span><span>Picos de campaña sin margen frente a los rate limits de la API.</span></li>
+                            <li class="flex gap-3"><span class="w-4 shrink-0 font-bold text-muted">3</span><span>Checkout/POS: sin alertas cuando falla la sincronización.</span></li>
+                        </ol>
+
+                        <h4 class="mt-6 text-lg font-bold text-ink">Prioridades</h4>
+                        <dl class="mt-3 space-y-3 text-sm">
+                            <div class="flex gap-3"><dt class="w-20 shrink-0 font-bold text-ink">Ahora</dt><dd class="text-muted">Reintentos e idempotencia en los webhooks.</dd></div>
+                            <div class="flex gap-3"><dt class="w-20 shrink-0 font-bold text-ink">Después</dt><dd class="text-muted">Prueba de carga antes de la próxima campaña.</dd></div>
+                            <div class="flex gap-3"><dt class="w-20 shrink-0 font-bold text-ink">Puede esperar</dt><dd class="text-muted">Refactor del tema.</dd></div>
+                        </dl>
+
+                        <h4 class="mt-6 text-lg font-bold text-ink">Decisión pendiente</h4>
+                        <p class="mt-3 text-sm text-muted">¿Cola propia o servicio gestionado? Trade-offs y recomendación en el Decision Log.</p>
+
+                        <p class="mt-8 flex justify-between border-t border-line pt-4 text-xs text-muted"><span>bytewise.es</span><span>1 / 2</span></p>
+                    </div>
+                    <figcaption class="mt-3 text-sm text-muted">Ejemplo ilustrativo con datos de muestra.</figcaption>
+                </figure>
             </div>
         </div>
     </section>
 
     <!-- Experience -->
-    <section id="experiencia" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-100">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900">Contexto</h2>
-            <p class="mt-4 text-lg text-slate-600">
+    <section id="experiencia" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="max-w-3xl">
+            <h2 class="text-3xl font-bold leading-[1.1] text-ink md:text-5xl">Contexto</h2>
+            <p class="mt-4 text-lg text-muted">
                 Trabajo a diario en los mismos problemas: decisiones técnicas que tienen que funcionar a escala.
             </p>
         </div>
 
-        <div class="mt-12 grid gap-8 md:grid-cols-2">
-            <div
-                class="relative rounded-2xl bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border-2 border-blue-200 p-8 hover:shadow-xl transition-all">
-                <div class="flex items-center gap-3 mb-4">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">Partner en Comply</h3>
-                </div>
-                <p class="text-sm text-slate-700 mb-6 leading-relaxed">
-                    SaaS de compliance fiscal para comerciantes Shopify. Certificamos <span
-                        class="font-semibold">Francia</span> y <span class="font-semibold">España</span>.
+        <div class="mt-12 grid border-t-2 border-ink md:grid-cols-2 md:divide-x md:divide-line">
+            <div class="pt-6 md:pr-12">
+                <p class="text-xs font-bold uppercase tracking-[0.14em] text-muted">Storelink · Valencia, España</p>
+                <h3 class="mt-3 text-2xl font-bold text-ink">Partner en Comply</h3>
+                <p class="mt-4 text-muted">
+                    SaaS de compliance fiscal para comerciantes Shopify. Certificamos <strong
+                        class="font-bold text-ink">Francia</strong> y <strong
+                        class="font-bold text-ink">España</strong>.
                     Multi-tenant sobre Azure, con toda la complejidad de integraciones POS, facturación y auditoría.
                 </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Certificación</span>
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Arquitectura</span>
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Cloud
-                        Native</span>
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-blue-200 rounded-lg text-xs font-medium text-blue-700">Shopify
-                        Native</span>
-                </div>
-                <div class="mt-6 pt-6 border-t border-blue-200">
-                    <p class="text-xs text-slate-600">Storelink · Valencia, España</p>
-                </div>
+                <p class="mt-6 text-sm text-ink">Certificación · Arquitectura · Cloud Native · Shopify Native</p>
             </div>
 
-            <div
-                class="relative rounded-2xl bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border-2 border-emerald-200 p-8 hover:shadow-xl transition-all">
-                <div class="flex items-center gap-3 mb-4">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">Manager en Boku</h3>
-                </div>
-                <p class="text-sm text-slate-700 mb-6 leading-relaxed">
-                    Coordinación de equipos técnicos distribuidos entre <span class="font-semibold">America, EMEA
-                        e APAC</span>.
+            <div class="mt-12 border-t border-line pt-6 md:mt-0 md:border-t-0 md:pl-12">
+                <p class="text-xs font-bold uppercase tracking-[0.14em] text-muted">Boku · Global</p>
+                <h3 class="mt-3 text-2xl font-bold text-ink">Manager en Boku</h3>
+                <p class="mt-4 text-muted">
+                    Coordinación de equipos técnicos distribuidos entre <strong
+                        class="font-bold text-ink">America, EMEA e APAC</strong>.
                     Technical Project Managers trabajando en proyectos globales con merchants como Apple.
                 </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-emerald-200 rounded-lg text-xs font-medium text-emerald-700">Equipos
-                        distribuidos</span>
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-emerald-200 rounded-lg text-xs font-medium text-emerald-700">Escalabilidad</span>
-                    <span
-                        class="px-3 py-1.5 bg-white/80 backdrop-blur border border-emerald-200 rounded-lg text-xs font-medium text-emerald-700">Async-first</span>
-                </div>
-                <div class="mt-6 pt-6 border-t border-emerald-200">
-                    <p class="text-xs text-slate-600">Boku · Global</p>
-                </div>
+                <p class="mt-6 text-sm text-ink">Equipos distribuidos · Escalabilidad · Async-first</p>
             </div>
         </div>
     </section>
 
     <!-- Contact CTA -->
-    <section id="contacto" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div
-                class="relative rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-12 shadow-2xl overflow-hidden">
-                <!-- Decorative elements -->
-                <div
-                    class="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
-                </div>
-                <div
-                    class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
-                </div>
-
-                <div class="relative text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-white">
-                        Hablemos de tu proyecto
-                    </h2>
-                    <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
-                        Primera llamada sin compromiso. Cuéntame qué estás construyendo y charlamos sobre las
-                        opciones
-                        que tienes.
-                        A veces con 30 minutos ya queda más claro el camino.
-                    </p>
-
-                    <div class="mt-8">
-                        <a href="mailto:alejandro@bytewise.es?subject=Bytewise - Primera llamada"
-                            class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 shadow-lg hover:bg-slate-100 hover:scale-105 transition-all">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                            Agendar 30 min
-                        </a>
-                    </div>
-                </div>
+    <section id="contacto" class="max-w-6xl mx-auto px-6 py-16 border-t border-line">
+        <div class="on-ink grid gap-10 rounded-lg bg-ink p-6 sm:p-12 md:grid-cols-12 md:items-end md:p-16">
+            <div class="md:col-span-8">
+                <h2 class="text-4xl font-bold leading-[1.05] text-paper md:text-5xl">Hablemos de tu proyecto</h2>
+                <p class="mt-4 max-w-xl text-lg text-muted-dark">
+                    Primera llamada sin compromiso. Cuéntame qué estás construyendo y charlamos sobre las
+                    opciones que tienes. A veces con 30 minutos ya queda más claro el camino.
+                </p>
+            </div>
+            <div class="md:col-span-4 md:text-right">
+                <a href="mailto:alejandro@bytewise.es?subject=Bytewise - Primera llamada"
+                    class="inline-flex items-center justify-center rounded-md bg-cursor px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-paper">
+                    Agendar 30 min
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-50 border-t border-gray-200 py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-6xl mx-auto text-center">
-            <div class="text-2xl font-bold text-gray-900 mb-4">Bytewise</div>
-            <p class="text-gray-600 mb-6">CTO Advisory para equipos Shopify</p>
-            <div class="flex justify-center gap-6 text-sm text-gray-600">
-                <a href="/" class="hover:text-gray-900">Inicio</a>
-                <span>|</span>
-                <a href="precios.html" class="hover:text-gray-900">Precios</a>
-                <span>|</span>
-                <span>Valencia, España</span>
+    <footer class="bg-sand border-t border-line py-12 px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-12">
+            <div class="md:col-span-6">
+                <a href="index.html" class="inline-block" aria-label="Bytewise, inicio">
+                    <img src="assets/bytewise-logo-ink.svg" alt="Bytewise" width="565" height="112" class="h-8 w-auto">
+                </a>
+                <p class="mt-4 text-muted">CTO Advisory para equipos Shopify</p>
             </div>
-            <div class="mt-6 text-xs text-gray-500">
+            <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink md:col-span-6 md:justify-end" aria-label="Pie">
+                <a href="index.html" class="hover:underline">Inicio</a>
+                <a href="precios.html" class="hover:underline">Precios</a>
+                <span class="text-muted">Valencia, España</span>
+            </nav>
+            <p class="border-t border-line pt-6 text-xs text-muted md:col-span-12">
                 Servicio prestado por Alejandro de Arriba SL · © 2025 Bytewise
-            </div>
+            </p>
         </div>
     </footer>
 
